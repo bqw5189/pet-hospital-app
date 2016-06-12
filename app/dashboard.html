@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Dashboard</title>
+	<title>工作站</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
 	<link rel="shortcut icon" href="favicon.png">
 	<!---CSS Files-->
@@ -38,15 +38,41 @@
 
             <ul id="nav">
                 <li class="active"><span class="nav-icon icon-home"></span>工作站</li>
-                <li><a href="his.html"><span class="nav-icon icon-subtractshape"></span>HIS</a>
+                <li><a href="his.html"><span class="nav-icon icon-addtolist"></span>HIS</a>
 									<ul class="sub-nav">
-											<li><span class="icon icon-lock"></span><a href="403.html">403 Page</a></li>
-											<li><span class="icon icon-question-sign"></span><a href="404.html">404 Page</a></li>
-											<li><span class="icon icon-remove"></span><a href="503.html">503 Page</a></li>
+											<li><span class="icon icon-lock"></span><a href="403.html">门诊挂号</a></li>
+											<li><span class="icon icon-remove"></span><a href="503.html">门诊收费</a></li>
+											<li><span class="icon icon-question-sign"></span><a href="404.html">预约管理</a></li>
+											<li><span class="icon icon-remove"></span><a href="503.html">住院登记</a></li>
+											<li><span class="icon icon-remove"></span><a href="503.html">出院收费</a></li>
 									</ul>
 								</li>
-                <li><a href="crm.html"><span class="nav-icon icon-subtractshape"></span>CRM</a></li>
-                <li><a href="erp.html"><span class="nav-icon icon-dotlist"></span>ERP</a></li>
+                <li><a href="crm.html"><span class="nav-icon icon-subtractshape"></span>CRM</a>
+									<ul class="sub-nav">
+											<li><span class="icon icon-lock"></span><a href="403.html">会员管理</a></li>
+									</ul>
+								</li>
+                <li><a href="erp.html"><span class="nav-icon icon-dotlist"></span>ERP</a>
+									<ul class="sub-nav">
+											<li><span class="icon icon-lock"></span><a href="403.html">门诊挂号</a></li>
+											<li><span class="icon icon-remove"></span><a href="503.html">门诊收费</a></li>
+											<li><span class="icon icon-question-sign"></span><a href="404.html">预约管理</a></li>
+											<li><span class="icon icon-remove"></span><a href="503.html">住院登记</a></li>
+											<li><span class="icon icon-remove"></span><a href="503.html">出院收费</a></li>
+									</ul>
+								</li>
+                <li><a href="erp.html"><span class="nav-icon icon-settingsandroid"></span>系统管理</a>
+									<ul class="sub-nav">
+											<li><span class="icon icon-lock"></span><a href="403.html">药品目录</a></li>
+											<li><span class="icon icon-remove"></span><a href="503.html">诊疗目录</a></li>
+											<li><span class="icon icon-question-sign"></span><a href="404.html">耗材目录</a></li>
+											<li><span class="icon icon-remove"></span><a href="503.html">商品目录</a></li>
+											<li><span class="icon icon-remove"></span><a href="503.html">组合项目</a></li>
+											<li><span class="icon icon-remove"></span><a href="503.html">人员管理</a></li>
+											<li><span class="icon icon-remove"></span><a href="503.html">组管理</a></li>
+											<li><span class="icon icon-remove"></span><a href="503.html">科室管理</a></li>
+									</ul>
+								</li>
                 <li id="logout"><a href="index.html"></a><span class="nav-icon icon-shutdown"></span>注销</li>
             </ul>
         </div>
@@ -54,13 +80,13 @@
             <div id="dash-bar" class="top-bar box">
                 <div id="alerts" class="item">
                     <div class="content">
-                        <p id="last-chat"><strong>Michael</strong>: Sure thing, you know me!<span class="msg-time">6 mins ago</span></p>
+                        <p id="last-chat"><strong>待诊</strong>: 会员＊＊＊＊!<span class="msg-time">6 分钟前</span></p>
                         <div id="chat-notif">
                             <div class="buttons">
-                                <button id="reply-btn" class="expand-tg gray" data-expand="#chat-reply">Reply</button>
-                                <button id="open-chat" class="gray mod-tg" data-modal="#chat-mod">Open chat</button>
+                                <button id="reply-btn" class="expand-tg gray">下一位</button>
+                                <button id="open-chat" class="gray mod-tg">待诊列表</button>
                             </div>
-                            <a href="#" data-expand="#chat-unread" class="expand-tg unread-msg"><strong>2</strong> other unread messages</a>
+                            <a href="#" data-expand="#chat-unread" class="expand-tg unread-msg"><strong>2</strong> 未就诊记录</a>
                         </div>
                         <span class="icon-chat item-icon"></span>
                         <span class="coll-handle"></span>
@@ -72,16 +98,16 @@
                             <span id="chat-load" class="icon-loadingflowcw spinning"></span>
                         </div>
                         <div id="chat-unread">
-                            <p><strong>jake.westbury87@al1as.com</strong>Hey man, how's it going? Got a new project, in case you're interested let me know!<span class="msg-time">Yesterday</span></p>
-                            <p><strong>Johnny</strong>Guys, some help please? I deleted some files to make room for... uhm... some HD movies, and now I'm getting all kinds of errors.<span class="msg-time">8:53 AM</span></p>
+                            <p><strong>会员＊＊＊</strong>感冒.<span class="msg-time">8:30 上午</span></p>
+                            <p><strong>会员＊＊＊</strong>疫苗接种.<span class="msg-time">8:53 上午</span></p>
                         </div>
                     </div>
                 </div>
 
                 <div id="dash-cal" class="item">
-                    <span id="cal-day">19 Nov</span>
+                    <span id="cal-day">2016-6-9</span>
                     <span class="icon-calendarthree item-icon"></span>
-                    <p id="cal-events">No events today</p>
+                    <p id="cal-events">无待办信息</p>
                 </div>
 
                 <span id="tb-handle"></span>
@@ -115,35 +141,34 @@
             <div id="ctrl-box" class="box g8 row1">
 	            <div id="ctrl-panel" class="nav-box left vt">
                     <div class="nav-cont">
-											<div id="profile-set" class="nav-item">
+											<div id="profile-set" class="nav-item show">
 												<div id="profile-av">
 													<img src="themes/default/img/avatars/alex.jpg" alt="User avatar">
-													<span id="profile-av-info"><strong>alex.jpg</strong> uploaded 12.07.2012</span>
+													<span id="profile-av-info"><strong>用户基本信息</strong> 更新时间 12.07.2012</span>
 													<div class="buttons wide">
-														<button class="change"><span class="icon icon-refresh"></span>Change</button>
-														<button class="remove"><span class="icon icon-remove"></span>Remove</button>
+														<button class="change"><span class="icon icon-refresh"></span>保存</button>
 													</div>
 												</div>
 
 												<div id="profile-role" class="inp-cont g16">
-															<label>Role</label>
+															<label>角色</label>
 															<span class="icon-securityalt-shieldalt"></span><strong>Administrator</strong>
 													</div>
 
 													<div class="inp-cont g8">
-															<label>Name</label>
+															<label>姓名</label>
 															<input placeholder="Name" value="Alex Nitu">
 													</div>
 													<div class="inp-cont g8">
-															<label>E-mail</label>
+															<label>邮件</label>
 															<input placeholder="Email" value="alex@alex.alx">
 													</div>
 													<div class="inp-cont g8">
-															<label>Password</label>
+															<label>密码</label>
 															<input type="password" placeholder="Password" value="cant cme">
 													</div>
 													<div class="inp-cont multi g8">
-															<label>Birthdate</label>
+															<label>出生日期</label>
 															<div class="inp-grp full">
 																	<input class="g2" placeholder="Day" value="19">
 																	<input class="g2" placeholder="Month" value="11">
@@ -155,7 +180,7 @@
                     </div>
 
                     <ul id="ctrl-nav" class="nav dark">
-                        <li data-nav="#profile-set"><span class="icon-useralt nav-icon"></span></li>
+                        <li data-nav="#profile-set" class="bdrad-top-l sel"><span class="icon-useralt nav-icon"></span></li>
                         <li class="nav-special no-sel">
                             <ul class="no-sel">
                                 <li id="set-tg" data-modal="#ctrl-set" class="mod-tg ttip" data-ttip-opt="dark" title="Settings"><span class="icon-settingsandroid nav-icon"></span></li>
@@ -188,27 +213,25 @@
 	        </div>
 
             <div id="ctrl-set" class="modal box modslideupalt">
-                <div class="header"><span class="icon icon-cog"></span>Settings</div>
+                <div class="header"><span class="icon icon-cog"></span>设置</div>
                 <div class="mod-body no-pad">
-                    <div class="row ig8 bd-right"><label>Automatic Updates</label><input type="checkbox" class="checkbox big" checked></div>
-                    <div class="row ig8"><label>Automatic Backup</label><input type="checkbox" class="checkbox big" checked></div>
                     <div class="row">
-                        <label>Color Scheme</label>
+                        <label>颜色配置</label>
                         <div id="color-scheme" class="buttons btn-radio">
                             <button class="light gray pressed ig8"><span class="icon icon-brightnessfull"></span>Light</button>
                             <button class="black ig8"><span class="icon icon-brightness"></span>Dark</button>
                         </div>
                     </div>
                     <div id="sidebar-pos-row" class="row">
-                        <label>Sidebar Position</label>
+                        <label>菜单位置</label>
                         <div id="sidebar-pos" class="buttons btn-radio">
-                            <button class="mini left pressed ig4">Left</button>
-                            <button class="mini top ig4">Top</button>
-                            <button class="mini right ig4">Right</button>
-                            <button class="mini bottom ig4">Bottom</button>
+                            <button class="mini left pressed ig4">左</button>
+                            <button class="mini top ig4">上</button>
+                            <button class="mini right ig4">右</button>
+                            <button class="mini bottom ig4">下</button>
                         </div>
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                         <label>Sidebar Color</label>
                         <div class="inp-cont no-pad">
                             <input id="sidebar-color" value="#5b5a5a" data-defaultValue="#5b5a5a" placeholder="#5b5a5a">
@@ -219,55 +242,13 @@
                         <div class="inp-cont no-pad">
                             <input id="header-color" placeholder="Transparent">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="mod-act">
-                    <button id="res-set" class="red"><span class="icon icon-refresh"></span>Reset settings</button>
-                    <button class="close green"><span class="icon icon-ok"></span>Close</button>
+                    <button id="res-set" class="red"><span class="icon icon-refresh"></span>重置</button>
+                    <button class="close green"><span class="icon icon-ok"></span>关闭</button>
                 </div>
             </div>
-
-	        <div id="chat-mod" class="modal box chat-box modslidedownalt">
-	            <div class="mod-body nav-box left nav-big">
-		            <div class="nav-cont chat-cont">
-		            	<div id="usr1-msg" class="chat-msg nav-item show">
-			            	<p class="sent">What's up, how are you liking your new office?<span class="msg-info">Yesterday, 11:48 PM</span></p>
-		            		<p class="rec">It's pretty good, definitely better than my old one. Thanks!<span class="msg-info">8:35 AM</span></p>
-		            		<p class="sent">No problem, keep up the good work and this one will be your old one.<span class="msg-info">23 minutes ago</span></p>
-		            		<p class="rec">Sure thing, you know me!<span class="msg-info">6 minutes ago</span></p>
-		            	</div>
-		            	<div id="usr2-msg" class="chat-msg nav-item">
-		            		<p class="rec">Guys, some help please? I deleted some files to make room for... uhm... some HD movies, and now I'm getting all kinds of errors.<span class="msg-info">8:53 AM</span></p>
-		            		<p class="sent">Dammit Johnny, I told you to stop downloading porn on company PC's.<span class="msg-info">9:30 AM</span></p>
-		            	</div>
-		            	<div id="lisa-msg" class="chat-msg nav-item">
-		            		<p class="rec">Aww crap I spilled coffee on my favorite kittens sweater!<span class="msg-info">21 minutes ago</span></p>
-		            		<p class="sent">Well, I know what I'm getting you for your birthday.<span class="msg-info">15 minutes ago</span></p>
-		            	</div>
-		            </div>
-		            <ul class="nav dark">
-		            	<li data-nav="#usr1-msg" id="chat-usr1" class="sel bdrad-top-l">
-		            		<div class="contact-img"><img src="themes/default/img/avatars/michael.jpg" alt="Contact avatar"></div>
-		            		<div class="contact-name">Michael</div>
-		            	</li>
-		            	<li data-nav="#usr2-msg" id="chat-usr2">
-		            		<div class="contact-img"><img src="themes/default/img/avatars/johnny.jpg" alt="Contact avatar"></div>
-		            		<div class="contact-name">Johnny</div>
-		            	</li>
-		            	<li data-nav="#lisa-msg">
-		            		<div class="contact-img"><span class="icon icon-pictureframe"></span></div>
-		            		<div class="contact-name">Lisa</div>
-		            	</li>
-		            </ul>
-	            </div>
-	            <div class="mod-act">
-		            <form class="chat-form">
-		            	<input type="text" class="chat-inp" placeholder="Type in your message...">
-		            	<button type="submit" class="chat-send green"><span class="icon icon-exit"></span>SEND</button>
-		            </form>
-		            <button class="close">Close</button>
-	            </div>
-	        </div>
 
         </div>
 
@@ -305,9 +286,9 @@
     var d = new Date();
     var day = d.getDate();
     var month = d.getMonth();
-    var months = [ "Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec" ];
+    var months = [ "一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二" ];
 
-    $('#cal-day').text(''+day+' '+months[month]+'');
+    $('#cal-day').text(''+day+' '+months[month]+'月');
 
     // GAUGES
 

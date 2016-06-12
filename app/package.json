@@ -1,5 +1,5 @@
 {
-  "name": "---",
+  "name": "main",
   "version": "0.0.1",
   "description": "--",
   "main": "index.html",
@@ -9,6 +9,7 @@
     "--"
   ],
   "window": {
+    "debug": true,
     "toolbar": false,
     "resizable": false,
     "width": 1000,
@@ -18,6 +19,9 @@
     "max_width": 1000,
     "max_height": 600,
     "position": "center"
+  },
+  "webkit": {
+    "plugin": true
   },
   "author": "baiqw",
   "license": "",
