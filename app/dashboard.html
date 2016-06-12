@@ -38,39 +38,41 @@
 
             <ul id="nav">
                 <li class="active"><span class="nav-icon icon-home"></span>工作站</li>
-                <li><a href="his.html"><span class="nav-icon icon-addtolist"></span>HIS</a>
+                <li><a href="dashboard.html"><span class="nav-icon icon-addtolist"></span>HIS</a>
 									<ul class="sub-nav">
-											<li><span class="icon icon-lock"></span><a href="403.html">门诊挂号</a></li>
-											<li><span class="icon icon-remove"></span><a href="503.html">门诊收费</a></li>
-											<li><span class="icon icon-question-sign"></span><a href="404.html">预约管理</a></li>
-											<li><span class="icon icon-remove"></span><a href="503.html">住院登记</a></li>
-											<li><span class="icon icon-remove"></span><a href="503.html">出院收费</a></li>
+											<li><span class="icon icon-edit"></span><a href="dashboard.html">门诊挂号</a></li>
+											<li><span class="icon icon-yen"></span><a href="dashboard.html">门诊收费</a></li>
+											<li><span class="icon icon-alarm"></span><a href="dashboard.html">预约管理</a></li>
+											<li><span class="icon icon-hospital"></span><a href="dashboard.html">住院登记</a></li>
+											<li><span class="icon icon-yen"></span><a href="dashboard.html">出院收费</a></li>
 									</ul>
 								</li>
-                <li><a href="crm.html"><span class="nav-icon icon-subtractshape"></span>CRM</a>
+                <li><a href="dashboard.html"><span class="nav-icon icon-visitor"></span>CRM</a>
 									<ul class="sub-nav">
-											<li><span class="icon icon-lock"></span><a href="403.html">会员管理</a></li>
+											<li><span class="icon icon-adduseralt"></span><a href="dashboard.html">会员管理</a></li>
 									</ul>
 								</li>
-                <li><a href="erp.html"><span class="nav-icon icon-dotlist"></span>ERP</a>
+                <li><a href="dashboard.html"><span class="nav-icon icon-dotlist"></span>ERP</a>
 									<ul class="sub-nav">
-											<li><span class="icon icon-lock"></span><a href="403.html">门诊挂号</a></li>
-											<li><span class="icon icon-remove"></span><a href="503.html">门诊收费</a></li>
-											<li><span class="icon icon-question-sign"></span><a href="404.html">预约管理</a></li>
-											<li><span class="icon icon-remove"></span><a href="503.html">住院登记</a></li>
-											<li><span class="icon icon-remove"></span><a href="503.html">出院收费</a></li>
+											<li><span class="icon icon-database"></span><a href="dashboard.html">药品库存</a></li>
+											<li><span class="icon icon-database"></span><a href="dashboard.html">商品库存</a></li>
+											<li><span class="icon icon-database"></span><a href="dashboard.html">耗材库存</a></li>
+											<li><span class="icon icon-shipping"></span><a href="dashboard.html">供应商</a></li>
+											<li><span class="icon icon-share"></span><a href="dashboard.html">药房发药</a></li>
+											<li><span class="icon icon-salealt"></span><a href="dashboard.html">商品结算</a></li>
+											<li><span class="icon icon-check"></span><a href="dashboard.html">库存盘点</a></li>
 									</ul>
 								</li>
-                <li><a href="erp.html"><span class="nav-icon icon-settingsandroid"></span>系统管理</a>
+                <li><a href="dashboard.html"><span class="nav-icon icon-settingstwo-gearalt"></span>系统管理</a>
 									<ul class="sub-nav">
-											<li><span class="icon icon-lock"></span><a href="403.html">药品目录</a></li>
-											<li><span class="icon icon-remove"></span><a href="503.html">诊疗目录</a></li>
-											<li><span class="icon icon-question-sign"></span><a href="404.html">耗材目录</a></li>
-											<li><span class="icon icon-remove"></span><a href="503.html">商品目录</a></li>
-											<li><span class="icon icon-remove"></span><a href="503.html">组合项目</a></li>
-											<li><span class="icon icon-remove"></span><a href="503.html">人员管理</a></li>
-											<li><span class="icon icon-remove"></span><a href="503.html">组管理</a></li>
-											<li><span class="icon icon-remove"></span><a href="503.html">科室管理</a></li>
+											<li><span class="icon icon-colocation"></span><a href="dashboard.html">药品目录</a></li>
+											<li><span class="icon icon-colocation"></span><a href="dashboard.html">诊疗目录</a></li>
+											<li><span class="icon icon-colocation"></span><a href="dashboard.html">耗材目录</a></li>
+											<li><span class="icon icon-colocation"></span><a href="dashboard.html">商品目录</a></li>
+											<li><span class="icon icon-colocationalt"></span><a href="dashboard.html">组合项目</a></li>
+											<li><span class="icon icon-user"></span><a href="dashboard.html">人员管理</a></li>
+											<li><span class="icon icon-groups-friends"></span><a href="dashboard.html">组管理</a></li>
+											<li><span class="icon icon-microsoftoffice"></span><a href="dashboard.html">科室管理</a></li>
 									</ul>
 								</li>
                 <li id="logout"><a href="index.html"></a><span class="nav-icon icon-shutdown"></span>注销</li>
@@ -202,13 +204,13 @@
 
 	        <div id="notif-mod" class="modal mini box modslideright">
                 <div class="header">
-                    <span class="icon icon-subtractshape"></span>Notifications &amp; Alerts
+                    <span class="icon icon-subtractshape"></span>通知 &amp; 提醒
                     <button class="mini close"><span class="icon icon-remove no-mg"></span></button>
                 </div>
 	            <div class="mod-body">
-		            <p class="alert warn">Low disk space remaining on partition E:/</p>
-		            <p class="alert info">MySQL updated to newest version (v5.6)</p>
-		            <p class="alert danger">Server #3 reporting high temperatures</p>
+		            <p class="alert warn">住院10床病人呼叫。</p>
+		            <p class="alert info">您还有2位病人等待就诊。</p>
+		            <p class="alert danger">准备十分钟后手术！</p>
 	            </div>
 	        </div>
 

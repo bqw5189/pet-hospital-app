@@ -2,7 +2,7 @@
   "name": "main",
   "version": "0.0.1",
   "description": "--",
-  "main": "index.html",
+  "main": "dashboard.html",
   "private": true,
   "keywords": [
     "--",
