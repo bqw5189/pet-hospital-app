@@ -1,15 +1,12 @@
 {
-  "name": "myDashboard",
+  "name": "---",
   "version": "0.0.1",
-  "description": "A node-webkit dashboard application",
+  "description": "--",
   "main": "index.html",
   "private": true,
   "keywords": [
-    "node",
-    "webkit",
-    "dashbaord",
-    "win",
-    "osx"
+    "--",
+    "--"
   ],
   "window": {
     "toolbar": false,
@@ -22,8 +19,8 @@
     "max_height": 600,
     "position": "center"
   },
-  "author": "Arvind Ravulavaru",
-  "license": "MIT",
+  "author": "baiqw",
+  "license": "",
   "dependencies": {
     "diskdb": "^0.1.14",
     "bcrypt-nodejs": "0.0.3",

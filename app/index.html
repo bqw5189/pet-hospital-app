@@ -2,94 +2,71 @@
 <html class="bg-black">
 <head>
     <meta charset="UTF-8">
-    <title>宠物医院 | 登录</title>
+    <title>-- | 登录</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-    <!-- bootstrap 3.0.2 -->
-    <link href="themes/default/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <!-- font Awesome -->
-    <link href="themes/default/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <!-- Theme style -->
-    <link href="themes/default/css/AdminLTE.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="controller/auth.js"></script>
-    <script type="text/javascript">
-    if (JSON.parse(localStorage.getItem('user'))) location.href = 'dashboard.html';
-    </script>
+
+    <!---CSS Files-->
+  	<link rel="stylesheet" href="themes/default/css/core.css">
+  	<link rel="stylesheet" href="themes/default/css/login.css">
+    <link rel="stylesheet" href="themes/default/css/inputs.css">
+    <link rel="stylesheet" href="themes/default/css/ui.css">
+    <link rel="stylesheet" href="themes/default/css/anims.css">
+    <link rel="stylesheet" href="themes/default/css/icons.css">
+  	<link rel="stylesheet" href="themes/default/css/global.css">
+  	<!---jQuery Files-->
+  	<script src="themes/default/js/jquery.js"></script>
+  	<script src="themes/default/js/inputs.js"></script>
+    <script src="themes/default/js/functions.js"></script>
 </head>
-<body class="bg-black">
-    <div class="form-box" id="login-box">
-        <div class="header">Sign In</div>
-        <form action="dashboard.html" method="post">
-            <div class="body bg-gray">
-                <div class="form-group has-error">
-                    <label class="control-label hide" id="form-val"><i class="fa fa-times-circle-o"></i> Please fill the form completely to continue</label>
-                </div>
-                <div class="form-group has-error">
-                    <label class="control-label hide" for="userid"><i class="fa fa-times-circle-o"></i> Required</label>
-                    <input type="text" name="userid" id="userid" class="form-control" placeholder="User ID" />
-                </div>
-                <div class="form-group has-error">
-                    <label class="control-label hide" for="password"><i class="fa fa-times-circle-o"></i> Required</label>
-                    <input type="password" name="password" id="password" class="form-control" placeholder="Password" />
-                </div>
-            </div>
-            <div class="footer">
-                <button type="button" id="login" class="btn bg-olive btn-block">Sign me in</button>
-                <a href="register.html" class="text-center">Register a new account</a>
-            </div>
-        </form>
+<body>
+  <div id="wrapper">
+    <div id="login-body">
+      <form id="login-form" class="show" method="get" action="dashboard.html">
+        <div id="login">
+          <div id="login-user">
+            <div class="icon-user"></div>
+            <input type="text" id="username" class="login-input required" placeholder="用户名" value="user1" autocomplete="off">
+          </div>
+          <div id="login-pass">
+            <span class="icon-securityalt-shieldalt"></span>
+            <input type="password" id="password" class="login-input required passwf" placeholder="密码">
+          </div>
+        </div>
+        <div id="avatar"><img src="themes/default/img/avatars/alex.jpg" alt="Selected user avatar"><div id="av-overlay"></div></div>
+        <button id="login-btn" type="submit" class="button submit">登录</button>
+      </form>
+
+      <div id="login-action">
+        <div id="logo"></div>
+        <div id="rb-check-cont">
+        </div>
+      </div>
     </div>
 
-    <!-- jQuery 2.0.2 -->
-    <script src="themes/default/js/jquery.min.js"></script>
+  </div><!--END WRAPPER-->
+
+  <div id="load"><div id="spinner"></div><div id="load-inner"></div></div>
+
     <script type="text/javascript">
-    $('#userid').on('blur', function() {
-        var $this = $(this);
-        if ($this.val().trim().length < 1) {
-            $this.prev().removeClass('hide');
-            return false;
-        } else {
-            $this.prev().addClass('hide');
-            return true;
-        }
+    $('#login-body').hide();
+    $(window).bind('load', function() {
+        $('#load').fadeOut(600, function() {
+            $('#login-body').fadeIn(10, function() {
+                $(this).addClass('show');
+                $('#password').focus();
+                if ($(window).width() <= 480) $('#password').blur();
+            });
+        });
     });
 
-    $('#password').on('blur', function() {
-        var $this = $(this);
-        if ($this.val().trim().length < 1) {
-            $this.prev().removeClass('hide');
-            return false;
-        } else {
-            $this.prev().addClass('hide');
-            return true;
-        }
+    $('.input-error').click( function() {
+        var trigger = $(this).data('trigger');
+        $(this).offsetParent().find('input').eq(trigger).focus();
     });
 
-    function triggerFormVal() {
-        if ($('#userid').val().trim().length > 0 && $('#password').val().trim().length > 0) {
-            return true;
-        } else {
-            $('#userid,#password').trigger('blur');
-            return false;
-        }
-    }
+    $('#rb-check').checkfn();
 
-    $('#login').on('click', function() {
-        if (triggerFormVal()) {
-            $('#form-val').addClass('hide');
-            var resp = dash.authUser($('#userid').val().trim(), $('#password').val().trim());
-            if (resp == 1) {
-                location.href = 'dashboard.html';
-            } else if (resp == 2) {
-                location.href = 'settings.html';
-            } else if (resp == 3) {
-                alert('Invalid Userid or password');
-            } else {
-                alert('No user exists with this ID');
-            }
-        } else {
-            $('#form-val').removeClass('hide');
-        }
-    });
+    $('#login-form, #register-form').validate();
     </script>
 
 </body>
