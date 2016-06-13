@@ -1,305 +1,296 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>工作站</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-	<link rel="shortcut icon" href="favicon.png">
-	<!---CSS Files-->
-	<link rel="stylesheet" href="themes/default/css/core.css">
-  <link rel="stylesheet" href="themes/default/css/style.css">
-  <link rel="stylesheet" href="themes/default/css/ui.css">
-  <link rel="stylesheet" href="themes/default/css/inputs.css">
-  <link rel="stylesheet" href="themes/default/css/icons.css">
-  <link rel="stylesheet" href="themes/default/css/anims.css">
-	<link rel="stylesheet" href="themes/default/css/global.css">
-	<!---jQuery Files-->
-	<script src="themes/default/js/jquery.js"></script>
-	<script src="themes/default/js/jquery-ui.js"></script>
-	<script src="themes/default/js/functions.js"></script>
-	<script src="themes/default/js/inputs.js"></script>
-  <script src="themes/default/js/sparkline.js"></script>
-  <script src="themes/default/js/flot.js"></script>
-  <script src="themes/default/js/justgage.js"></script>
-  <script src="themes/default/js/tablesorter.js"></script>
+    <meta charset="UTF-8">
+    <title>工作站</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <link rel="shortcut icon" href="favicon.png">
+    <!---CSS Files-->
+    <link rel="stylesheet" href="themes/default/css/core.css">
+    <link rel="stylesheet" href="themes/default/css/style.css">
+    <link rel="stylesheet" href="themes/default/css/ui.css">
+    <link rel="stylesheet" href="themes/default/css/inputs.css">
+    <link rel="stylesheet" href="themes/default/css/icons.css">
+    <link rel="stylesheet" href="themes/default/css/anims.css">
+    <link rel="stylesheet" href="themes/default/css/global.css">
+    <!---jQuery Files-->
+    <script src="themes/default/js/jquery.js"></script>
+    <script src="themes/default/js/jquery-ui.js"></script>
+    <script src="themes/default/js/functions.js"></script>
+    <script src="themes/default/js/inputs.js"></script>
+    <script src="themes/default/js/sparkline.js"></script>
+    <script src="themes/default/js/flot.js"></script>
+    <script src="themes/default/js/justgage.js"></script>
+    <script src="themes/default/js/tablesorter.js"></script>
 </head>
 
 <body>
 
-	<div id="wrapper">
+<div id="wrapper">
 
-        <div id="sidebar">
-            <div id="avatar"><img src="themes/default/img/avatars/alex.jpg" alt="User avatar"><div id="av-overlay"></div></div>
-
-            <div id="user-notif">
-	            <div id="user-alert" class="icon-subtractshape mod-tg" data-modal="#notif-mod"><div id="notif-unread" class="notif-tag">3</div></div>
-                <!-- <div id="coll-sidebar"></div> -->
-            </div>
-
-            <ul id="nav">
-                <li class="active"><span class="nav-icon icon-home"></span>工作站</li>
-                <li><a href="dashboard.html"><span class="nav-icon icon-addtolist"></span>HIS</a>
-									<ul class="sub-nav">
-											<li><span class="icon icon-edit"></span><a href="dashboard.html">门诊挂号</a></li>
-											<li><span class="icon icon-yen"></span><a href="dashboard.html">门诊收费</a></li>
-											<li><span class="icon icon-alarm"></span><a href="dashboard.html">预约管理</a></li>
-											<li><span class="icon icon-hospital"></span><a href="dashboard.html">住院登记</a></li>
-											<li><span class="icon icon-yen"></span><a href="dashboard.html">出院收费</a></li>
-									</ul>
-								</li>
-                <li><a href="dashboard.html"><span class="nav-icon icon-visitor"></span>CRM</a>
-									<ul class="sub-nav">
-											<li><span class="icon icon-adduseralt"></span><a href="dashboard.html">会员管理</a></li>
-									</ul>
-								</li>
-                <li><a href="dashboard.html"><span class="nav-icon icon-dotlist"></span>ERP</a>
-									<ul class="sub-nav">
-											<li><span class="icon icon-database"></span><a href="dashboard.html">药品库存</a></li>
-											<li><span class="icon icon-database"></span><a href="dashboard.html">商品库存</a></li>
-											<li><span class="icon icon-database"></span><a href="dashboard.html">耗材库存</a></li>
-											<li><span class="icon icon-shipping"></span><a href="dashboard.html">供应商</a></li>
-											<li><span class="icon icon-share"></span><a href="dashboard.html">药房发药</a></li>
-											<li><span class="icon icon-salealt"></span><a href="dashboard.html">商品结算</a></li>
-											<li><span class="icon icon-check"></span><a href="dashboard.html">库存盘点</a></li>
-									</ul>
-								</li>
-                <li><a href="dashboard.html"><span class="nav-icon icon-settingstwo-gearalt"></span>系统管理</a>
-									<ul class="sub-nav">
-											<li><span class="icon icon-colocation"></span><a href="dashboard.html">药品目录</a></li>
-											<li><span class="icon icon-colocation"></span><a href="dashboard.html">诊疗目录</a></li>
-											<li><span class="icon icon-colocation"></span><a href="dashboard.html">耗材目录</a></li>
-											<li><span class="icon icon-colocation"></span><a href="dashboard.html">商品目录</a></li>
-											<li><span class="icon icon-colocationalt"></span><a href="dashboard.html">组合项目</a></li>
-											<li><span class="icon icon-user"></span><a href="dashboard.html">人员管理</a></li>
-											<li><span class="icon icon-groups-friends"></span><a href="dashboard.html">组管理</a></li>
-											<li><span class="icon icon-microsoftoffice"></span><a href="dashboard.html">科室管理</a></li>
-									</ul>
-								</li>
-                <li id="logout"><a href="index.html"></a><span class="nav-icon icon-shutdown"></span>注销</li>
-            </ul>
-        </div>
-        <div id="content" class="dash-page">
-            <div id="dash-bar" class="top-bar box">
-                <div id="alerts" class="item">
-                    <div class="content">
-                        <p id="last-chat"><strong>待诊</strong>: 会员＊＊＊＊!<span class="msg-time">6 分钟前</span></p>
-                        <div id="chat-notif">
-                            <div class="buttons">
-                                <button id="reply-btn" class="expand-tg gray">下一位</button>
-                                <button id="open-chat" class="gray mod-tg">待诊列表</button>
-                            </div>
-                            <a href="#" data-expand="#chat-unread" class="expand-tg unread-msg"><strong>2</strong> 未就诊记录</a>
-                        </div>
-                        <span class="icon-chat item-icon"></span>
-                        <span class="coll-handle"></span>
-                    </div>
-                    <div class="expand-content no-pad">
-                        <div id="chat-reply">
-                            <input type="text" id="chat-reply-input" placeholder="Type in your message">
-                            <span id="chat-confirm">Message sent!</span>
-                            <span id="chat-load" class="icon-loadingflowcw spinning"></span>
-                        </div>
-                        <div id="chat-unread">
-                            <p><strong>会员＊＊＊</strong>感冒.<span class="msg-time">8:30 上午</span></p>
-                            <p><strong>会员＊＊＊</strong>疫苗接种.<span class="msg-time">8:53 上午</span></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="dash-cal" class="item">
-                    <span id="cal-day">2016-6-9</span>
-                    <span class="icon-calendarthree item-icon"></span>
-                    <p id="cal-events">无待办信息</p>
-                </div>
-
-                <span id="tb-handle"></span>
-
-            </div>
-
-            <div class="portlets">
-
-                <div class="portlet green g4 resp-no-mg">
-                    <span class="icon icon-addtocart"></span>
-                    <h2>Products Sold <span>241</span></h2>
-                </div>
-
-                <div class="portlet blue g4">
-                    <span class="icon icon-money-cash"></span>
-                    <h2>Monthly Profit <span>$3840</span></h2>
-                </div>
-
-                <div class="portlet orange g4 resp-no-mg">
-                    <span class="icon icon-lightningalt"></span>
-                    <h2>Best Selling <span>Approduct</span></h2>
-                </div>
-
-                <div class="portlet red g4">
-                    <span class="icon icon-supportalt"></span>
-                    <h2>Support Tickets <span>12</span></h2>
-                </div>
-
-            </div>
-
-            <div id="ctrl-box" class="box g8 row1">
-	            <div id="ctrl-panel" class="nav-box left vt">
-                    <div class="nav-cont">
-											<div id="profile-set" class="nav-item show">
-												<div id="profile-av">
-													<img src="themes/default/img/avatars/alex.jpg" alt="User avatar">
-													<span id="profile-av-info"><strong>用户基本信息</strong> 更新时间 12.07.2012</span>
-													<div class="buttons wide">
-														<button class="change"><span class="icon icon-refresh"></span>保存</button>
-													</div>
-												</div>
-
-												<div id="profile-role" class="inp-cont g16">
-															<label>角色</label>
-															<span class="icon-securityalt-shieldalt"></span><strong>Administrator</strong>
-													</div>
-
-													<div class="inp-cont g8">
-															<label>姓名</label>
-															<input placeholder="Name" value="Alex Nitu">
-													</div>
-													<div class="inp-cont g8">
-															<label>邮件</label>
-															<input placeholder="Email" value="alex@alex.alx">
-													</div>
-													<div class="inp-cont g8">
-															<label>密码</label>
-															<input type="password" placeholder="Password" value="cant cme">
-													</div>
-													<div class="inp-cont multi g8">
-															<label>出生日期</label>
-															<div class="inp-grp full">
-																	<input class="g2" placeholder="Day" value="19">
-																	<input class="g2" placeholder="Month" value="11">
-																	<input class="g2" placeholder="Year" value="1994">
-															</div>
-													</div>
-
-											</div>
-                    </div>
-
-                    <ul id="ctrl-nav" class="nav dark">
-                        <li data-nav="#profile-set" class="bdrad-top-l sel"><span class="icon-useralt nav-icon"></span></li>
-                        <li class="nav-special no-sel">
-                            <ul class="no-sel">
-                                <li id="set-tg" data-modal="#ctrl-set" class="mod-tg ttip" data-ttip-opt="dark" title="Settings"><span class="icon-settingsandroid nav-icon"></span></li>
-                            </ul>
-                        </li>
-                    </ul>
-	            </div>
-            </div>
-
-
-            <div id="footer">
-                <p>版权 &amp; 信息</p>
-            </div>
+    <div id="sidebar">
+        <div id="avatar"><img src="themes/default/img/avatars/alex.jpg" alt="User avatar">
+            <div id="av-overlay"></div>
         </div>
 
-        <!--MODAL WINDOWS-->
-
-        <div class="modal-ov">
-
-	        <div id="notif-mod" class="modal mini box modslideright">
-                <div class="header">
-                    <span class="icon icon-subtractshape"></span>通知 &amp; 提醒
-                    <button class="mini close"><span class="icon icon-remove no-mg"></span></button>
-                </div>
-	            <div class="mod-body">
-		            <p class="alert warn">住院10床病人呼叫。</p>
-		            <p class="alert info">您还有2位病人等待就诊。</p>
-		            <p class="alert danger">准备十分钟后手术！</p>
-	            </div>
-	        </div>
-
-            <div id="ctrl-set" class="modal box modslideupalt">
-                <div class="header"><span class="icon icon-cog"></span>设置</div>
-                <div class="mod-body no-pad">
-                    <div class="row">
-                        <label>颜色配置</label>
-                        <div id="color-scheme" class="buttons btn-radio">
-                            <button class="light gray pressed ig8"><span class="icon icon-brightnessfull"></span>Light</button>
-                            <button class="black ig8"><span class="icon icon-brightness"></span>Dark</button>
-                        </div>
-                    </div>
-                    <div id="sidebar-pos-row" class="row">
-                        <label>菜单位置</label>
-                        <div id="sidebar-pos" class="buttons btn-radio">
-                            <button class="mini left pressed ig4">左</button>
-                            <button class="mini top ig4">上</button>
-                            <button class="mini right ig4">右</button>
-                            <button class="mini bottom ig4">下</button>
-                        </div>
-                    </div>
-                    <!-- <div class="row">
-                        <label>Sidebar Color</label>
-                        <div class="inp-cont no-pad">
-                            <input id="sidebar-color" value="#5b5a5a" data-defaultValue="#5b5a5a" placeholder="#5b5a5a">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <label>Header Color</label>
-                        <div class="inp-cont no-pad">
-                            <input id="header-color" placeholder="Transparent">
-                        </div>
-                    </div> -->
-                </div>
-                <div class="mod-act">
-                    <button id="res-set" class="red"><span class="icon icon-refresh"></span>重置</button>
-                    <button class="close green"><span class="icon icon-ok"></span>关闭</button>
-                </div>
+        <div id="user-notif">
+            <div id="user-alert" class="icon-subtractshape mod-tg" data-modal="#notif-mod">
+                <div id="notif-unread" class="notif-tag">3</div>
             </div>
-
+            <!-- <div id="coll-sidebar"></div> -->
         </div>
 
-	</div><!--END WRAPPER-->
+        <ul id="nav">
+            <li class="active"><span class="nav-icon icon-home"></span>工作站</li>
+            <li><a href="dashboard.html"><span class="nav-icon icon-addtolist"></span>HIS</a>
+                <ul class="sub-nav">
+                    <li><span class="icon icon-edit"></span><a href="dashboard.html">门诊挂号</a></li>
+                    <li><span class="icon icon-yen"></span><a href="dashboard.html">门诊收费</a></li>
+                    <li><span class="icon icon-alarm"></span><a href="dashboard.html">预约管理</a></li>
+                    <li><span class="icon icon-hospital"></span><a href="dashboard.html">住院登记</a></li>
+                    <li><span class="icon icon-yen"></span><a href="dashboard.html">出院收费</a></li>
+                </ul>
+            </li>
+            <li><a href="dashboard.html"><span class="nav-icon icon-visitor"></span>CRM</a>
+                <ul class="sub-nav">
+                    <li><span class="icon icon-adduseralt"></span><a href="dashboard.html">会员管理</a></li>
+                </ul>
+            </li>
+            <li><a href="dashboard.html"><span class="nav-icon icon-dotlist"></span>ERP</a>
+                <ul class="sub-nav">
+                    <li><span class="icon icon-database"></span><a href="dashboard.html">药品库存</a></li>
+                    <li><span class="icon icon-database"></span><a href="dashboard.html">商品库存</a></li>
+                    <li><span class="icon icon-database"></span><a href="dashboard.html">耗材库存</a></li>
+                    <li><span class="icon icon-shipping"></span><a href="dashboard.html">供应商</a></li>
+                    <li><span class="icon icon-share"></span><a href="dashboard.html">药房发药</a></li>
+                    <li><span class="icon icon-salealt"></span><a href="dashboard.html">商品结算</a></li>
+                    <li><span class="icon icon-check"></span><a href="dashboard.html">库存盘点</a></li>
+                </ul>
+            </li>
+            <li><a href="dashboard.html"><span class="nav-icon icon-settingstwo-gearalt"></span>系统管理</a>
+                <ul class="sub-nav">
+                    <li><span class="icon icon-colocation"></span><a href="dashboard.html">药品目录</a></li>
+                    <li><span class="icon icon-colocation"></span><a href="dashboard.html">诊疗目录</a></li>
+                    <li><span class="icon icon-colocation"></span><a href="dashboard.html">耗材目录</a></li>
+                    <li><span class="icon icon-colocation"></span><a href="dashboard.html">商品目录</a></li>
+                    <li><span class="icon icon-colocationalt"></span><a href="dashboard.html">组合项目</a></li>
+                    <li><span class="icon icon-user"></span><a href="dashboard.html">人员管理</a></li>
+                    <li><span class="icon icon-groups-friends"></span><a href="dashboard.html">组管理</a></li>
+                    <li><span class="icon icon-microsoftoffice"></span><a href="dashboard.html">科室管理</a></li>
+                </ul>
+            </li>
+            <li id="logout"><a href="index.html"></a><span class="nav-icon icon-shutdown"></span>注销</li>
+        </ul>
+    </div>
+    <div id="content" class="dash-page">
+        <div class="top-bar box">
+            <div class="item ig5 tb-act buttons">
+                <button class="ig16"><span class="icon icon-layers"></span>门诊</button>
+            </div>
+            <div class="item ig5 tb-act buttons">
+                <button class="ig16"><span class="icon icon-hospital"></span>住院</button>
+            </div>
+            <div class="item ig3 tb-act">
+                <button class="ig16"><span class="icon icon-forward"></span>待诊信息</button>
+            </div>
+            <div class="item ig3 tb-act">
+                <button class="orange toggle ig16"><span class="icon right icon-exit"></span>结束就诊</button>
+            </div>
+        </div>
+            <span id="tb-handle"></span>
+        </div>
 
-	<div id="load"><div id="spinner"></div></div>
+        <!--<div class="portlets">-->
 
-	<!---jQuery Code-->
-	<script type='text/javascript'>
+            <!--<div class="portlet green g4 resp-no-mg">-->
+                <!--<span class="icon icon-addtocart"></span>-->
+                <!--<h2>Products Sold <span>241</span></h2>-->
+            <!--</div>-->
 
-	$.fn.loadfns( function() { // PUT FUNCTIONS TO BE EXECUTED ON DOCUMENT READY HERE
-		$('.spark').sparkline('html', {
+            <!--<div class="portlet blue g4">-->
+                <!--<span class="icon icon-money-cash"></span>-->
+                <!--<h2>Monthly Profit <span>$3840</span></h2>-->
+            <!--</div>-->
+
+            <!--<div class="portlet orange g4 resp-no-mg">-->
+                <!--<span class="icon icon-lightningalt"></span>-->
+                <!--<h2>Best Selling <span>Approduct</span></h2>-->
+            <!--</div>-->
+
+            <!--<div class="portlet red g4">-->
+                <!--<span class="icon icon-supportalt"></span>-->
+                <!--<h2>Support Tickets <span>12</span></h2>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div id="ctrl-box" class="box g16 row1">-->
+            <!--<div id="ctrl-panel" class="nav-box left vt">-->
+                <!--<div class="nav-cont">-->
+                    <!--<div id="profile-set" class="nav-item show">-->
+                        <!--<div id="profile-av">-->
+                            <!--<img src="themes/default/img/avatars/alex.jpg" alt="User avatar">-->
+                            <!--<span id="profile-av-info"><strong>用户基本信息</strong> 更新时间 12.07.2012</span>-->
+                            <!--<div class="buttons wide">-->
+                                <!--<button class="change"><span class="icon icon-refresh"></span>保存</button>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div id="profile-role" class="inp-cont g16">-->
+                            <!--<label>角色</label>-->
+                            <!--<span class="icon-securityalt-shieldalt"></span><strong>Administrator</strong>-->
+                        <!--</div>-->
+
+                        <!--<div class="inp-cont g8">-->
+                            <!--<label>姓名</label>-->
+                            <!--<input placeholder="Name" value="Alex Nitu">-->
+                        <!--</div>-->
+                        <!--<div class="inp-cont g8">-->
+                            <!--<label>邮件</label>-->
+                            <!--<input placeholder="Email" value="alex@alex.alx">-->
+                        <!--</div>-->
+                        <!--<div class="inp-cont g8">-->
+                            <!--<label>密码</label>-->
+                            <!--<input type="password" placeholder="Password" value="cant cme">-->
+                        <!--</div>-->
+                        <!--<div class="inp-cont multi g8">-->
+                            <!--<label>出生日期</label>-->
+                            <!--<div class="inp-grp full">-->
+                                <!--<input class="g2" placeholder="Day" value="19">-->
+                                <!--<input class="g2" placeholder="Month" value="11">-->
+                                <!--<input class="g2" placeholder="Year" value="1994">-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<ul id="ctrl-nav" class="nav dark">-->
+                    <!--<li data-nav="#profile-set" class="bdrad-top-l sel"><span class="icon-useralt nav-icon"></span></li>-->
+                    <!--<li class="nav-special no-sel">-->
+                        <!--<ul class="no-sel">-->
+                            <!--<li id="set-tg" data-modal="#ctrl-set" class="mod-tg ttip" data-ttip-opt="dark"-->
+                                <!--title="Settings"><span class="icon-settingsandroid nav-icon"></span></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+        <div id="footer">
+            <p>版权 &amp; 信息</p>
+        </div>
+    </div>
+
+    <!--MODAL WINDOWS-->
+
+    <div class="modal-ov">
+
+        <div id="notif-mod" class="modal mini box modslideright">
+            <div class="header">
+                <span class="icon icon-subtractshape"></span>通知 &amp; 提醒
+                <button class="mini close"><span class="icon icon-remove no-mg"></span></button>
+            </div>
+            <div class="mod-body">
+                <p class="alert warn">住院10床病人呼叫。</p>
+                <p class="alert info">您还有2位病人等待就诊。</p>
+                <p class="alert danger">准备十分钟后手术！</p>
+            </div>
+        </div>
+
+        <div id="ctrl-set" class="modal box modslideupalt">
+            <div class="header"><span class="icon icon-cog"></span>设置</div>
+            <div class="mod-body no-pad">
+                <div class="row">
+                    <label>颜色配置</label>
+                    <div id="color-scheme" class="buttons btn-radio">
+                        <button class="light gray pressed ig8"><span class="icon icon-brightnessfull"></span>Light
+                        </button>
+                        <button class="black ig8"><span class="icon icon-brightness"></span>Dark</button>
+                    </div>
+                </div>
+                <div id="sidebar-pos-row" class="row">
+                    <label>菜单位置</label>
+                    <div id="sidebar-pos" class="buttons btn-radio">
+                        <button class="mini left pressed ig4">左</button>
+                        <button class="mini top ig4">上</button>
+                        <button class="mini right ig4">右</button>
+                        <button class="mini bottom ig4">下</button>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <label>Sidebar Color</label>
+                    <div class="inp-cont no-pad">
+                        <input id="sidebar-color" value="#5b5a5a" data-defaultValue="#5b5a5a" placeholder="#5b5a5a">
+                    </div>
+                </div>
+                <div class="row">
+                    <label>Header Color</label>
+                    <div class="inp-cont no-pad">
+                        <input id="header-color" placeholder="Transparent">
+                    </div>
+                </div> -->
+            </div>
+            <div class="mod-act">
+                <button id="res-set" class="red"><span class="icon icon-refresh"></span>重置</button>
+                <button class="close green"><span class="icon icon-ok"></span>关闭</button>
+            </div>
+        </div>
+
+    </div>
+
+</div><!--END WRAPPER-->
+
+<div id="load">
+    <div id="spinner"></div>
+</div>
+
+<!---jQuery Code-->
+<script type='text/javascript'>
+    $.fn.loadfns(function () { // PUT FUNCTIONS TO BE EXECUTED ON DOCUMENT READY HERE
+        $('.spark').sparkline('html', {
             type: 'bar', height: '40px', barSpacing: 4, barColor: '#89A824', negBarColor: '#d6692f'
         });
 
         $('#intro').nanoScroller();
         $("#table").tablesorter();
-	});
+    });
 
     // TOP BAR CHAT WIDGET
 
-    $('#reply-btn').click( function() { setTimeout( function() { $('#chat-reply-input').focus(); }, 1000); });
+    $('#reply-btn').click(function () {
+        setTimeout(function () {
+            $('#chat-reply-input').focus();
+        }, 1000);
+    });
 
-    $("#chat-reply-input").keyup(function(e){
-          if (e.keyCode === 13 && $(this).val()) {
-            $('#chat-load').fadeIn(300).delay(500).fadeOut(300, function() {
+    $("#chat-reply-input").keyup(function (e) {
+        if (e.keyCode === 13 && $(this).val()) {
+            $('#chat-load').fadeIn(300).delay(500).fadeOut(300, function () {
                 $('#chat-reply-input').val('').blur();
                 $('#chat-confirm').fadeIn(300).delay(800).fadeOut(300);
             });
-          };
-     });
+        }
+        ;
+    });
 
     // TOP BAR CALENDAR WIDGET
 
     var d = new Date();
     var day = d.getDate();
     var month = d.getMonth();
-    var months = [ "一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二" ];
+    var months = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二"];
 
-    $('#cal-day').text(''+day+' '+months[month]+'月');
+    $('#cal-day').text('' + day + ' ' + months[month] + '月');
 
     // GAUGES
 
 
-
-    $('#chk-up-btn').click( function() {
+    $('#chk-up-btn').click(function () {
         $('#chk-up-btn').attr('disabled', true);
-        $('#sys-up-ok').fadeOut(150, function() {
-            $('#sys-up-check').fadeIn(300).delay(2000).fadeOut(300, function() {
+        $('#sys-up-ok').fadeOut(150, function () {
+            $('#sys-up-check').fadeIn(300).delay(2000).fadeOut(300, function () {
                 $('#sys-up-ok').fadeIn(300);
                 $('#chk-up-btn').attr('disabled', false);
             })
@@ -316,91 +307,141 @@
     });
     $('#task-box ul').disableSelection();
 
-    $('#task-box li:not(.task)').click( function() { $(this).toggleClass('done'); });
+    $('#task-box li:not(.task)').click(function () {
+        $(this).toggleClass('done');
+    });
 
     // CHART PLOTTING
 
 
-
     // CONTROL PANEL SETTINGS
 
-    $('#sidebar-pos .left').click( function() { $('#wrapper').removeClass('sidebar-hz sidebar-top sidebar-right sidebar-bottom'); });
-    $('#sidebar-pos .top').click( function() { $('#wrapper').addClass('sidebar-hz sidebar-top').removeClass('sidebar-right sidebar-bottom'); });
-    $('#sidebar-pos .right').click( function() { $('#wrapper').addClass('sidebar-right').removeClass('sidebar-hz sidebar-top sidebar-bottom'); });
-    $('#sidebar-pos .bottom').click( function() { $('#wrapper').addClass('sidebar-hz sidebar-bottom').removeClass('sidebar-right sidebar-top'); });
+    $('#sidebar-pos .left').click(function () {
+        $('#wrapper').removeClass('sidebar-hz sidebar-top sidebar-right sidebar-bottom');
+    });
+    $('#sidebar-pos .top').click(function () {
+        $('#wrapper').addClass('sidebar-hz sidebar-top').removeClass('sidebar-right sidebar-bottom');
+    });
+    $('#sidebar-pos .right').click(function () {
+        $('#wrapper').addClass('sidebar-right').removeClass('sidebar-hz sidebar-top sidebar-bottom');
+    });
+    $('#sidebar-pos .bottom').click(function () {
+        $('#wrapper').addClass('sidebar-hz sidebar-bottom').removeClass('sidebar-right sidebar-top');
+    });
 
     // COLOR SCHEME SETTINGS
 
     var storageStatus = $.storage();
     if (storageStatus) {
-        $('#res-set').click( function() { localStorage.clear(); location.reload(true); });
+        $('#res-set').click(function () {
+            localStorage.clear();
+            location.reload(true);
+        });
         var storedColorScheme = localStorage.getItem('color-scheme');
-            storedSidebarColor = localStorage.getItem('sidebar-color');
-            storedHeaderColor = localStorage.getItem('header-color');
-            userName = localStorage.getItem('user-name');
+        storedSidebarColor = localStorage.getItem('sidebar-color');
+        storedHeaderColor = localStorage.getItem('header-color');
+        userName = localStorage.getItem('user-name');
     } else {
         var storedColorScheme,
-            storedSidebarColor,
-            storedHeaderColor,
-            userName;
-        $('#res-set').attr('disabled','disabled');
+                storedSidebarColor,
+                storedHeaderColor,
+                userName;
+        $('#res-set').attr('disabled', 'disabled');
     }
 
     var sidebarColor = $('#sidebar').css('background-color');
-    function rgb2hex(rgb){
-		rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
-		return "#" +
-		("0" + parseInt(rgb[1],10).toString(16)).slice(-2) +
-		("0" + parseInt(rgb[2],10).toString(16)).slice(-2) +
-		("0" + parseInt(rgb[3],10).toString(16)).slice(-2).toLowerCase();
+    function rgb2hex(rgb) {
+        rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+        return "#" +
+                ("0" + parseInt(rgb[1], 10).toString(16)).slice(-2) +
+                ("0" + parseInt(rgb[2], 10).toString(16)).slice(-2) +
+                ("0" + parseInt(rgb[3], 10).toString(16)).slice(-2).toLowerCase();
     }
     $.minicolors.defaults.position = 'top right';
 
-    if (storedColorScheme) { $('#color-scheme .black').toggleBtn(); };
-    if (storedSidebarColor) { $('#sidebar-color').val(storedSidebarColor) };
-    if (storedHeaderColor) { $('#header-color').val(storedHeaderColor) };
-    if ($('body').hasClass('dark') && !storedHeaderColor) { $('#header-color').val('#707070').attr('placeholder','#707070') };
-    $('#color-scheme .black').click( function() {
-    	if (!$('body').hasClass('dark')) {
-            $('#load').fadeIn(400, function() { $('body').addClass('dark'); $('#load').delay(400).fadeOut(800); });
-            if (!storedHeaderColor) $('#header-color').val('#707070').attr('placeholder','#707070');
-            if (storageStatus) localStorage.setItem('color-scheme','dark');
+    if (storedColorScheme) {
+        $('#color-scheme .black').toggleBtn();
+    }
+    ;
+    if (storedSidebarColor) {
+        $('#sidebar-color').val(storedSidebarColor)
+    }
+    ;
+    if (storedHeaderColor) {
+        $('#header-color').val(storedHeaderColor)
+    }
+    ;
+    if ($('body').hasClass('dark') && !storedHeaderColor) {
+        $('#header-color').val('#707070').attr('placeholder', '#707070')
+    }
+    ;
+    $('#color-scheme .black').click(function () {
+        if (!$('body').hasClass('dark')) {
+            $('#load').fadeIn(400, function () {
+                $('body').addClass('dark');
+                $('#load').delay(400).fadeOut(800);
+            });
+            if (!storedHeaderColor) $('#header-color').val('#707070').attr('placeholder', '#707070');
+            if (storageStatus) localStorage.setItem('color-scheme', 'dark');
         }
     });
-    $('#color-scheme .light').click( function() {
+    $('#color-scheme .light').click(function () {
         if ($('body').hasClass('dark')) {
-        	$('#load').fadeIn(400, function() { $('body').removeClass('dark'); $('#load').delay(400).fadeOut(800); });
-            if (!storedHeaderColor) $('#header-color').val('').attr('placeholder','Transparent');
+            $('#load').fadeIn(400, function () {
+                $('body').removeClass('dark');
+                $('#load').delay(400).fadeOut(800);
+            });
+            if (!storedHeaderColor) $('#header-color').val('').attr('placeholder', 'Transparent');
             if (storageStatus) localStorage.removeItem('color-scheme');
         }
     });
     $('#sidebar-color').minicolors({
-    	change: function(hex) {
-    		$('#sidebar').css('background-color',hex).lightOrDark();
+        change: function (hex) {
+            $('#sidebar').css('background-color', hex).lightOrDark();
             if (storageStatus) {
-                localStorage.setItem('sidebar-color',hex);
-                if ($('#sidebar').hasClass('light')) { localStorage.setItem('sidebar-light',1) } else { localStorage.removeItem('sidebar-light') };
+                localStorage.setItem('sidebar-color', hex);
+                if ($('#sidebar').hasClass('light')) {
+                    localStorage.setItem('sidebar-light', 1)
+                } else {
+                    localStorage.removeItem('sidebar-light')
+                }
+                ;
             }
-    	}
-	});
-	$('#header-color').minicolors({
-    	change: function(hex) {
-    		$('.box:not(.mini) .header').css('background-color',hex).lightOrDark();
+        }
+    });
+    $('#header-color').minicolors({
+        change: function (hex) {
+            $('.box:not(.mini) .header').css('background-color', hex).lightOrDark();
             if (storageStatus) {
-                localStorage.setItem('header-color',hex);
-                if ($('.box .header').hasClass('dark')) { localStorage.setItem('header-dark',1) } else { localStorage.removeItem('header-dark') };
-                if (!$(this).val()) { localStorage.removeItem('header-dark'); };
+                localStorage.setItem('header-color', hex);
+                if ($('.box .header').hasClass('dark')) {
+                    localStorage.setItem('header-dark', 1)
+                } else {
+                    localStorage.removeItem('header-dark')
+                }
+                ;
+                if (!$(this).val()) {
+                    localStorage.removeItem('header-dark');
+                }
+                ;
             }
-    		if (!$(this).val()) { $('.box .header').removeClass('dark'); };
-    	}
-	});
+            if (!$(this).val()) {
+                $('.box .header').removeClass('dark');
+            }
+            ;
+        }
+    });
 
-    $.fn.reverseChatMsg = function() {
-    	if ($(this).hasClass('rec')) { $(this).removeClass('rec').addClass('sent');
-    	} else if ($(this).hasClass('sent')) { $(this).removeClass('sent').addClass('rec'); };
+    $.fn.reverseChatMsg = function () {
+        if ($(this).hasClass('rec')) {
+            $(this).removeClass('rec').addClass('sent');
+        } else if ($(this).hasClass('sent')) {
+            $(this).removeClass('sent').addClass('rec');
+        }
+        ;
     };
 
 
-    </script>
+</script>
 </body>
 </html>

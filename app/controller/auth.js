@@ -4,17 +4,17 @@ var db = require('diskdb'),
 
 db = db.connect('collections', ['users', 'settings']);
 
-dash.registerUser = function(name, userid, password) {
+dash.registerUser = function (name, userid, password) {
 
     /*
-    *  response code : 0 - User with this id already exists
-    *  response code : 1 - Sucessfully registered and User has already filled the settings
-    *  response code : 2 - Sucessfully registered and User has not filled the settings
-    */
+     *  response code : 0 - User with this id already exists
+     *  response code : 1 - Sucessfully registered and User has already filled the settings
+     *  response code : 2 - Sucessfully registered and User has not filled the settings
+     */
 
     if (db.users.findOne({
-        userid: userid
-    })) return 0; 
+            userid: userid
+        })) return 0;
 
     // save the user to DB
     var savedUser = db.users.save({
@@ -25,14 +25,14 @@ dash.registerUser = function(name, userid, password) {
     return populateUser(savedUser);
 };
 
-dash.authUser = function(userid, password) {
-    
+dash.authUser = function (userid, password) {
+
     /*
-    *  response code : 0 - User does not exists
-    *  response code : 1 - Sucessfully logged in and User has already filled the settings
-    *  response code : 2 - Sucessfully logged in and User has not filled the settings
-    *  response code : 3 - Authentication failed
-    */
+     *  response code : 0 - User does not exists
+     *  response code : 1 - Sucessfully logged in and User has already filled the settings
+     *  response code : 2 - Sucessfully logged in and User has not filled the settings
+     *  response code : 3 - Authentication failed
+     */
 
     // fetch the user from DB
     var user = db.users.findOne({
@@ -53,19 +53,19 @@ dash.authUser = function(userid, password) {
 dash.signOut = function () {
 
     /*
-    *  Clean localstorage
-    */
+     *  Clean localstorage
+     */
 
-	localStorage.removeItem('user');
-	localStorage.removeItem('settings');
-	return 1;
+    localStorage.removeItem('user');
+    localStorage.removeItem('settings');
+    return 1;
 };
 
-var populateUser = function(user) {
-    
+var populateUser = function (user) {
+
     /*
-    *  Create a "Session"
-    */
+     *  Create a "Session"
+     */
 
     delete user.password; // remove password before creating a "session"
 

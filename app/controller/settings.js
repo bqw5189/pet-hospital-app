@@ -3,7 +3,7 @@ var db = require('diskdb');
 
 db = db.connect('collections', ['users', 'settings']);
 
-dash.saveSetting = function(uid, settings) {
+dash.saveSetting = function (uid, settings) {
     // upsert
     var upd = db.settings.update({
         uid: uid
@@ -16,7 +16,7 @@ dash.saveSetting = function(uid, settings) {
     });
 
     if (upd.updated > 0 || upd.inserted > 0) {
-    	localStorage.setItem('settings', JSON.stringify(settings));
+        localStorage.setItem('settings', JSON.stringify(settings));
         return 1;
     } else {
         return 0;
